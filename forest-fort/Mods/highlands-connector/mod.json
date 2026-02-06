@@ -1,0 +1,24 @@
+{
+    "name" : "Highlands connector",
+    "description" : "This submod makes Highlands terrain native to Forest fort faction.",
+	"modType" : "Compatibility",
+    "version" : "1.0",
+    "author" : "",
+    "contact" : "none",
+	"changelog" :
+	{
+		"1.0"   : [ "Initial release" ]
+	},
+	"compatibility" :
+	{
+		"min" : "1.4.0"
+	},
+	"depends" :
+	[
+		"hota.highlandsterrain"
+	],
+	"factions" :
+	[
+		"config/terrain/highTerrain.json"
+	]
+}

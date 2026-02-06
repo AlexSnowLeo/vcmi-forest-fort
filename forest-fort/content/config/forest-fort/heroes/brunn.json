@@ -1,0 +1,56 @@
+{
+	"fobrunn" :
+	{
+		"class" : "fomystic",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Brunn",
+			"biography" : "Brunn was one of the first dwarves to trust Beldorn and decided to prepare for the impending doom by hoarding gold. He even tried to convince Ufretin to abandon AvLee, knowing that deep down he distrusted the elves. However, Ufretin was too loyal to his homeland.",
+			"specialty" :
+			{
+				"description" : "Provides 350 gold per day.",
+				"tooltip" : "Provides gold",
+				"name" : "350 gold pieces"
+			}
+		},
+		"images" :
+		{
+	 		
+			"specialtySmall" : "forest-fort/heroes/brunn/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/brunn/spec-large.png",
+			"large" : "forest-fort/heroes/brunn/portrait-large.png",
+			"small" : "forest-fort/heroes/brunn/portrait-small.png"
+		},
+		"spellbook" :
+		[
+		       "fireWall"
+		],
+		"army" :
+		[
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			},
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 350
+				}
+			}
+		}	
+	}
+}

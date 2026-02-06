@@ -1,0 +1,61 @@
+{
+	"fonarva" :
+	{
+		"class" : "fosorceress",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Narva",
+			"biography" : "Narva is one of the few people who managed to stop the aging process through magic and significantly increase their vitality. Her troops also benefit from her power, which has a very positive effect on reducing mortality, whether due to illness or wounds.",
+			"specialty" : {
+				"description" : "Increases the life points of all units in the army by 5%.",
+				"tooltip" : "+5% Health bonus",
+				"name" : "Fountain of Life"
+			}
+		},
+		"images" :
+		{
+			
+			"specialtySmall" : "forest-fort/heroes/narva/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/narva/spec-large.png",
+			"large" : "forest-fort/heroes/narva/portrait-large.png",
+			"small" : "forest-fort/heroes/narva/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"airShield"
+		],
+                "army" :
+		[
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6}
+		],
+		"skills" : 
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "airMagic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"health1" : {
+					"type" : "STACK_HEALTH",
+					"val" : 1,
+					"valueType" : "BASE_NUMBER"
+				},
+				"health2" : {
+					"type" : "STACK_HEALTH",
+					"val" : 4,
+					"valueType" : "PERCENT_TO_BASE"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"forebecca" :
+	{
+		"class" : "fosorceress",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Rebecca",
+			"biography" : "Rebecca is one of the most famous sorceresses and participated in the War of Succession, siding with Roland. She was personally acquainted with Gem, but their paths diverged after some time. She is currently researching magic capable of overcoming any natural resistance.",
+			"specialty" :
+			{
+				"description" : "All creatures on the battlefield lose their natural resistance to spells.",
+				"tooltip" : "Loss of Resistance",
+				"name" : "Loss of Resistance"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "forest-fort/heroes/rebecca/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/rebecca/spec-large.png",
+			"large" : "forest-fort/heroes/rebecca/portrait-large.png",
+			"small" : "forest-fort/heroes/rebecca/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"chainLightning"
+		],
+                "army" :
+		[
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6}
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "wisdom"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"magicVulnerability" : {
+					"type" : "NEGATE_ALL_NATURAL_IMMUNITIES",
+					"subtype" : "immunityBattleWide",
+					"val" : 0,
+					"valueType" : "BASE_NUMBER",
+					"propagator" : "BATTLE_WIDE"
+				},
+				"magicVulnerability2" : {
+					"type" : "NEGATE_ALL_NATURAL_IMMUNITIES",
+					"subtype" : "immunityEnemyHero",
+					"val" : 0,
+					"valueType" : "BASE_NUMBER",
+					"propagator" : "BATTLE_WIDE"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"fobeledlen" : 
+	{
+		"class" : "fomystic",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Beledlen",
+			"biography" : "Unlike other mystics, Beledlen has a rather explosive temper, which, combined with his magical aura, affects everyone around him. This makes him a rather unusual individual among the peaceful creatures inhabiting the forest forts. His combat skills are legendary.",
+			"specialty" : 
+			{
+				"description" : "At the beginning of combat, all units commanded by the hero gain bloodlust for 10 turns.",
+				"tooltip" : "Combat Bonus: Blood frenzy",
+				"name" : "Blood frenzy"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "forest-fort/heroes/beledlen/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/beledlen/spec-large.png",
+			"large" : "forest-fort/heroes/beledlen/portrait-large.png",
+			"small" : "forest-fort/heroes/beledlen/portrait-small.png"
+		},
+		"spellbook" :
+		[
+			"lightningBolt"		
+               ],
+               "army" :
+		[
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"bloodlust" : {
+					"subtype" : "bloodlust",
+					"type" : "OPENING_BATTLE_SPELL",
+					"val" : 10,
+					"valueType" : "BASE_NUMBER"
+				}
+			}
+		}		
+	}
+}

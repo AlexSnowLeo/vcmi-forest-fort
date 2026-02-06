@@ -1,0 +1,45 @@
+{
+	"fobeldorn" :
+	{
+		"class" : "fomystic",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Beldorn",
+			"biography" : "Throughout his life, Beldorn has had prophetic dreams of future events, and recently has been plagued by visions of the world's destruction. Through the art of oneiromancy, he discovered that these visions could prove true and that the key to survival lay in opening portals to a new world.",
+			"specialty" :
+			{
+				"description" : "Increases Mysticism skill by 5% for each experience level reached.",
+				"tooltip" : "Mysticism Bonus",
+				"name" : "Mysticism"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "forest-fort/heroes/beldorn/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/beldorn/spec-large.png",
+			"large" : "forest-fort/heroes/beldorn/portrait-large.png",
+			"small" : "forest-fort/heroes/beldorn/portrait-small.png"
+		},
+		"spellbook" :
+		[
+			"visions"
+               	],
+                "army" :
+		[
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6}
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "mysticism"
+			}
+		],
+		"specialty" : {
+			"secondary" : "mysticism"
+		}
+	}
+}

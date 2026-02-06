@@ -1,0 +1,111 @@
+{
+	"forest-fort" :
+	{
+		"town" :
+		{
+			"siege" :
+			{
+				"shooter" : "evHalfling",
+				"imagePrefix" : "forest-fort/siege/SGPR",
+				"towerIconSmall" : "forest-fort/icons/towerSmall",
+				"towerIconLarge" : "forest-fort/icons/towerLarge",
+				"gate" : {
+					"arch" : {
+						"x" : 460,
+						"y" : 220
+					},
+					"gate" : {
+						"x" : 403,
+						"y" : 271
+					}
+				},
+				"moat" : {
+					"bank" : {
+						"x" : 410,
+						"y" : 77
+					},
+					"moat" : {
+						"x" : 410,
+						"y" : 77
+					}
+				},
+				"static" : {
+					"background" : {
+						"x" : 608,
+						"y" : 46
+					},
+					"bottom" : {
+						"x" : 510,
+						"y" : 334
+					},
+					"top" : {
+						"x" : 492,
+						"y" : 83
+					}
+				},
+				"towers" : {
+					"bottom" : {
+						"battlement" : {
+							"x" : 594,
+							"y" : 511
+						},
+						"creature" : {
+							"x" : 371,
+							"y" : 297
+						},
+						"tower" : {
+							"x" : 594,
+							"y" : 511
+						}
+					},
+					"keep" : {
+						"battlement" : {
+							"x" : 0,
+							"y" : 0
+						},
+						"creature" : {
+							"x" : 530,
+							"y" : -90
+						},
+						"tower" : {
+							"x" : 0,
+							"y" : 0
+						}
+					},
+					"top" : {
+						"battlement" : {
+							"x" : 566,
+							"y" : 31
+						},
+						"creature" : {
+							"x" : 341,
+							"y" : -181
+						},
+						"tower" : {
+							"x" : 565,
+							"y" : 31
+						}
+					}
+				},
+				"walls" : {
+					"bottom" : {
+						"x" : 549,
+						"y" : 451
+					},
+					"bottomMid" : {
+						"x" : 469,
+						"y" : 309
+					},
+					"upper" : {
+						"x" : 530,
+						"y" : 57
+					},
+					"upperMid" : {
+						"x" : 469,
+						"y" : 186
+					}
+				}
+			}
+		}
+	}
+}

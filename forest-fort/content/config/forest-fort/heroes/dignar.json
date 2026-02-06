@@ -1,0 +1,51 @@
+{
+	"fodignar" : 
+	{
+		"class" : "fomystic",
+		"female" : false,
+        "texts" :
+		{
+			"name" : "Dignar",
+			"biography" : "Dignar was raised among hobbits, despite being a dwarf himself. He was found in the forest as an infant and never met his dwarven parents. Now old, he still has a sharp mind and agile body. He teaches the hobbits how to use a sling.",
+			"specialty" : 
+			{
+				"description" : "Increases the speed of Hobbits and Battle hobbits by 1 and their attack and defense by 10% per experience level.",
+				"tooltip" : "Hobbits bonus",
+				"name" : "Hobbits"
+			}
+		},
+		"images" :
+		{
+			
+			"specialtySmall" : "forest-fort/heroes/dignar/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/dignar/spec-large.png",
+			"large" : "forest-fort/heroes/dignar/portrait-large.png",
+			"small" : "forest-fort/heroes/dignar/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"precision"
+		],
+		"army" :
+		[
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 }
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			},
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			}
+		],
+		"specialty" : {
+			"creature" : "evHalfling"
+		}			
+	}
+}

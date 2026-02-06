@@ -1,0 +1,57 @@
+{
+	"fosayna" : 
+	{
+		"class" : "fosorceress",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Sayna",
+			"biography" : "Sayna can strengthen the weapons of her troops using ancient techniques known only to her. This mysterious sorceress has long trained in the art of blessings and water magic, and in the past, she sailed on ships, protecting them from storms and thus This is how she made her living. She now guards the forest forts.",
+			"specialty" : 
+			{
+				"description" : "All units gain +1 to minimum and maximum damage.",
+				"tooltip" : "Creature Bonus: Enchanted Weapons",
+				"name" : "Enchanted Weapons"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "forest-fort/heroes/sayna/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/sayna/spec-large.png",
+			"large" : "forest-fort/heroes/sayna/portrait-large.png",
+			"small" : "forest-fort/heroes/sayna/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"bless"
+		],
+		"army" :
+		[
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"damageBoost" : {
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageBoth",
+					"val" : 1,
+					"valueType" : "BASE_NUMBER"
+				}
+			}
+		}
+	}
+}

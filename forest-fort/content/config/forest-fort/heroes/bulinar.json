@@ -1,0 +1,57 @@
+{
+	"fobulinar" : 
+	{
+		"class" : "fomystic",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Bulinar",
+			"biography" : "Bulinar has always had a natural talent for magic, especially combat spells. However, he is a very friendly and calm person, and so he uses his abilities only when absolutely necessary.",
+			"specialty" : {
+				"description" : "Increases Sorcery skill by 5% for each experience level reached.",
+				"tooltip" : "Bonus to Sorcery",
+				"name" : "Sorcery"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "forest-fort/heroes/bulinar/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/bulinar/spec-large.png",
+			"large" : "forest-fort/heroes/bulinar/portrait-large.png",
+			"small" : "forest-fort/heroes/bulinar/portrait-small.png"
+		},
+		"spellbook" :
+		[
+			"iceBolt"
+		],
+		"army" :
+		[
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			},
+			{
+				"level" : "basic",
+				"skill" : "sorcery"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"sorcery" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.any",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

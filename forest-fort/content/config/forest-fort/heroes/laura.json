@@ -1,0 +1,54 @@
+{
+	"folaura" : 
+	{
+		"class" : "fosorceress",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Laura",
+			"biography" : "Laura always strives for harmony and can use her innate charm and grace to win over allies. Usually, everyone willingly follows her orders.",
+			"specialty" :
+			{
+				"description" : "All creatures receive +1 Morale.",
+				"tooltip" : "Creature Bonus: Morale",
+				"name" : "Morale"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "forest-fort/heroes/laura/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/laura/spec-large.png",
+			"large" : "forest-fort/heroes/laura/portrait-large.png",
+			"small" : "forest-fort/heroes/laura/portrait-small.png"
+		},
+		"spellbook" :
+		[
+		       "hypnotize"
+		],
+                "army" :
+		[
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "diplomacy"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"morale" : {
+					"type" : "MORALE",
+					"val" : 1
+				}
+			}
+		}
+	}
+}

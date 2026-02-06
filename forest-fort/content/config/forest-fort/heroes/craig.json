@@ -1,0 +1,58 @@
+{
+	"focraig" :
+	{
+		"class" : "fomystic",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Craig",
+			"biography" : "Craig has always bravely resisted the forces of both Avlee and Erathia, because, in his opinion, regardless of the fine slogans of both nations, independence is paramount. Craig is known for creating the finest armor reinforced with spells.",
+			"specialty" :
+			{
+				"description" : "Increases Armorer skill by 5% for each experience level reached.",
+				"tooltip" : "Armorer Bonus",
+				"name" : "Armorer"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "forest-fort/heroes/craig/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/craig/spec-large.png",
+			"large" : "forest-fort/heroes/craig/portrait-large.png",
+			"small" : "forest-fort/heroes/craig/portrait-small.png"
+		},
+		"spellbook" :
+		[
+			"shield"
+		],
+		"army" :
+		[
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6}
+		],
+		"skills" : 
+		[
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			},
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"armorer" : {
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}
+	}
+}

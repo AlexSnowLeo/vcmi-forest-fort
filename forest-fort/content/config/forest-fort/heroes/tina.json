@@ -1,0 +1,56 @@
+{
+	"fotina" : 
+	{
+		"class" : "fosorceress",
+		"female" : true,
+                 "texts" :
+		{
+			"name" : "Tina",
+			"biography" : "Dwarf miners searching for tin pulled this hobbit girl out of a stone shell where she had been trapped for centuries. No one, including herself, knew how she got there, so the dwarves named her Tina. All that remains is to find out who she is and where she comes from.",
+			"specialty" : {
+				"description" : "All creatures gain +1 to Luck.",
+				"tooltip" : "Creature Bonus: Luck",
+				"name" : "Luck"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "forest-fort/heroes/tina/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/tina/spec-large.png",
+			"large" : "forest-fort/heroes/tina/portrait-large.png",
+			"small" : "forest-fort/heroes/tina/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"dispel"
+		],
+		"army" :
+		[
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"luck" : {
+					"type" : "LUCK",
+					"val" : 1
+				}
+			}
+		}		
+	}
+}

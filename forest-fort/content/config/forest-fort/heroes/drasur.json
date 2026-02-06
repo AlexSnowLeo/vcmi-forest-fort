@@ -1,0 +1,51 @@
+{
+	"fodrasur" : 
+	{
+		"class" : "fomystic",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Drasur",
+			"biography" : "Drasur is one of the finest forest warriors among all dwarven mystics. He finds both melee and magical combat natural. Forest warriors and forest soldiers learn much from him. Under Drasur's watchful eye, they can run across the battlefield at incredible speeds and pounce on the enemy.", 
+			"specialty" :
+			{
+				"description" : "Increases the speed of Forest warriors and soldiers by 1, and upon reaching level 2, also increases their Attack and Defense.",
+				"tooltip" : "Forest warriors bonus",
+				"name" : "Forest warriors"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "forest-fort/heroes/drasur/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/drasur/spec-large.png",
+			"large" : "forest-fort/heroes/drasur/portrait-large.png",
+			"small" : "forest-fort/heroes/drasur/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"magicArrow"
+		],
+		"army" :
+		[
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+			"specialty" : {
+			"creature" : "evDwarfBonecrusher"
+		}				
+	}
+}

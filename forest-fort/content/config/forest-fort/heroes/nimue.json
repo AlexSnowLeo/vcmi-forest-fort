@@ -1,0 +1,50 @@
+{
+	"fonimue" : 
+	{
+		"class" : "fosorceress",
+		"female" : true,
+        "texts" :
+		{
+			"name" : "Nimue",
+			"biography" : "Nimue enjoys the company of water nymphs and has a good relationship with them. She taught them the basics of combat and how to effectively defend their wells from intruders.",
+			"specialty" : 
+			{
+				"description" : "Increases speed of Water and Blue Nymphs by 1, and after reaching level 3, also increases their attack and defense.",
+				"tooltip" : "Water nymphs bonus",
+				"name" : "Water nymphs"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "forest-fort/heroes/nimue/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/nimue/spec-large.png",
+			"large" : "forest-fort/heroes/nimue/portrait-large.png",
+			"small" : "forest-fort/heroes/nimue/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"frostRing"
+		],
+		"army" :
+		[
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6},
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6},
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "intelligence"
+			}
+		],
+		"specialty" : {
+			"creature" : "evDwarfWarrior"
+		}
+	}
+}

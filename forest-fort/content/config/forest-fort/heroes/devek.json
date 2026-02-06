@@ -1,0 +1,48 @@
+{
+	"fodevek" : 
+	{
+		"class" : "fomystic",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Devek",
+			"biography" : "Devek is one of the most intelligent mystics. He has an insatiable thirst for knowledge and has perfected ancient techniques that allow him to access mana reserves greater than others can amass. He believes that the true essence of magic can be captured by combining structured knowledge with natural intuition.",
+			"specialty" : {
+				"description" : "Increases Intelligence skill by 5% for each experience level reached.",
+				"tooltip" : "Intelligence bonus",
+				"name" : "Intelligence"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "forest-fort/heroes/devek/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/devek/spec-large.png",
+			"large" : "forest-fort/heroes/devek/portrait-large.png",
+			"small" : "forest-fort/heroes/devek/portrait-small.png"
+		},
+		"spellbook" :
+		[
+			"haste"
+		],
+		"army" :
+		[
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			},
+			{
+				"level" : "basic",
+				"skill" : "intelligence"
+			}
+		],
+		"specialty" : {
+			"secondary" : "intelligence"
+		}
+	}
+}

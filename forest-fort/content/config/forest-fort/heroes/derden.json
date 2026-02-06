@@ -1,0 +1,56 @@
+{
+	"foderden" :
+	{
+		"class" : "fomystic",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Derden",
+			"biography" : "Derden was originally a monk, but later noticed how everything in the world seemed to be interconnected. This resonated with him. His transition from monk to mystic, however, was so gradual that he cannot recall the day he became a forest man.",
+			"specialty" :
+			{
+				"description" : "Casts Stone skin with its effect increased by 3 for level 1-2 creatures, by 2 for level 3-4 creatures, and by 1 for level 5-6 creatures.",
+				"tooltip" : "Stone skin bonus",
+				"name" : "Stone skin"
+			}
+		}, 
+		"images" :
+		{
+			"specialtySmall" : "forest-fort/heroes/derden/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/derden/spec-large.png",
+			"large" : "forest-fort/heroes/derden/portrait-large.png",
+			"small" : "forest-fort/heroes/derden/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"stoneSkin"
+		],
+		"army" :
+		[
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			},
+			{
+				"level" : "basic",
+				"skill" : "earthMagic"
+			}
+		],
+			"specialty" : {
+            "bonuses" : {
+                "stoneSkin" : {
+                    "addInfo" : 0,
+                    "subtype" : "spell.stoneSkin",
+                    "type" : "SPECIAL_PECULIAR_ENCHANT"
+               		 	}
+           	 	}
+       	 	}
+	}
+}

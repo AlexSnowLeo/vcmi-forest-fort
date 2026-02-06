@@ -1,0 +1,134 @@
+{
+	"evDwarfWarrior":
+	{
+		"name" :
+		{
+			"plural" : "Water nymphs",
+			"singular" : "Water nymph"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 12
+		},
+		"faction" : "forest-fort",
+		"aiValue" : 331,
+		"attack" : 8,
+		"cost" :
+		{
+			"gold" : 200
+		},
+		"damage" :
+		{
+			 "max" : 5,
+			 "min" : 3
+		},
+		"defense" : 10,
+		"fightValue" : 328,
+		"graphics" :
+		{
+			"animation" : "forest-fort/battle/warrior.def",
+			"animationTime" : { "attack" : 1,  "idle" : 10, "walk" : 1 },
+			"map" : "forest-fort/map/warrior.def",
+			"iconSmall" : "forest-fort/iconsSmall/warrior.bmp",
+			"iconLarge" : "forest-fort/iconsBig/warrior.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+				"projectile": "PELFX.DEF",
+				"attackClimaxFrame" : 11,
+				"offset" :
+				{
+					"upperX" : 32,
+					"upperY" : -77,
+					"middleX" : 40,
+					"middleY" : -61,
+					"lowerX" : 18,
+					"lowerY" : -55
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+            "hasDoubleWeek": true,
+		"shots" : 12,
+		"growth" : 6,
+		"hitPoints" : 30,
+		"level" : 3,
+		"upgrades":
+		[
+			"evDwarfVeteran"
+		],
+		"sound" :
+		{
+			"attack" : "forest-fort/SORCATTK.wav",
+			"defend" : "forest-fort/SORCDFND.wav",
+			"killed" : "forest-fort/SORCKILL.wav",
+			"move" : "forest-fort/SORCMOVE.wav",
+			"shoot" : "HCRSSHOT.wav",
+			"wince" : "forest-fort/SORCWNCE.wav"
+		},
+		"speed" : 5,
+                "abilities" :
+                {
+			"canShoot" : {
+				"type" : "SHOOTER"
+			},
+			"limitedShoot" : {
+				"type" : "LIMITED_SHOOTING_RANGE",
+				"val" : 10
+			}, 
+	         "iceBoltImmunity" : {
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.iceBolt"
+			},
+			"frostRingImmunity" : {
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.frostRing"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			}
+		]
+	}
+}

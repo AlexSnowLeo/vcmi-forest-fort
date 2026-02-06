@@ -1,0 +1,50 @@
+{
+	"fofelicia" :
+	{
+		"class" : "fosorceress",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Felicia",
+			"biography" : "Felicia was once one of the most important druidesses of AvLee, but she rebelled against her own nation and sided with the independent peoples inhabiting the disputed lands between AvLee and Erathia. She now leads all druidesses who support independence.",
+			"specialty" :
+			{
+				"description" : "Increases speed of Druidesses and Archdruidesses by 1, and upon reaching level 6, also increases their attack and defense.",
+				"tooltip" : "Druidesses bonus",
+				"name" : "Druidesses"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "forest-fort/heroes/felicia/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/felicia/spec-large.png",
+			"large" : "forest-fort/heroes/felicia/portrait-large.png",
+			"small" : "forest-fort/heroes/felicia/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"slow"
+		],
+                "army" :
+		[
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "learning"
+			}
+		],
+		"specialty" : {
+			"creature" : "evShaman"
+		}		
+	}
+}

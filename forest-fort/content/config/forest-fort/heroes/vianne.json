@@ -1,0 +1,49 @@
+{
+	"fovianne" : 
+	{
+		"class" : "fosorceress",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Vianne",
+			"biography" : "Vianne refuses to talk about herself or her past and is angry when asked about it. Despite her secretive nature, she is a talented sorceress who can work well with others. She dreams of becoming a teacher so she can train dryads in the use of magic.",
+			"specialty" :
+			{
+				"description" : "Increases the speed of Field and Sunny dryads by 1, and upon reaching level 4, also increases their attack and defense.",
+				"tooltip" : "Field dryads bonus",
+				"name" : "Field dryads"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "forest-fort/heroes/vianne/spec-small.png",
+			"specialtyLarge" : "forest-fort/heroes/vianne/spec-large.png",
+			"large" : "forest-fort/heroes/vianne/portrait-large.png",
+			"small" : "forest-fort/heroes/vianne/portrait-small.png"
+		},
+		"spellbook" :
+		[
+			"cure"
+		],
+		"army" :
+		[
+			{ "creature" : "evHalfling", "min" : 10, "max" : 15 },
+			{ "creature" : "evDwarfBonecrusher", "min" : 6, "max" : 9 },
+			{ "creature" : "evDwarfWarrior", "min" : 4, "max" : 6}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "scholar"
+			}
+		],
+		"specialty" : {
+			"creature" : "evWasp"
+		}			
+	}
+}

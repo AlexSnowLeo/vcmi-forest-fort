@@ -1,0 +1,118 @@
+{
+	"evDwarfBerserker":
+	{
+		"name" :
+		{
+			"plural" : "Forest soldiers",
+			"singular" : "Forest soldier"
+		},
+		"advMapAmount" :
+		{
+			"max" : 25,
+			"min" : 16
+		},
+		"faction" : "forest-fort",
+		"aiValue" : 198,
+		"attack" : 7,
+		"hasDoubleWeek" : true,
+         "cost" :
+		{
+			"gold" : 160
+		},
+		"damage" :
+		{
+			"max" : 5,
+			"min" : 2
+		},
+		"defense" : 6,
+		"fightValue" : 160,
+		"horde" : 6,
+		"graphics" :
+		{
+			"animation" : "forest-fort/battle/berserker.def",
+			"animationTime" : { "attack" : 1,  "idle" : 10, "walk" : 1 },
+			"map" : "forest-fort/map/berserker.def",
+			"iconSmall" : "forest-fort/iconsSmall/berserker.bmp",
+			"iconLarge" : "forest-fort/iconsBig/berserker.bmp",
+			"timeBetweenFidgets" : 1,
+
+			},
+
+		"growth" : 9,
+		"hitPoints" : 20,
+                "level" : 2,
+		"sound" :
+		{
+			"attack": "DWRFATTK.wav",
+			"defend": "DWRFDFND.wav",
+			"killed": "DWRFKILL.wav",
+			"move": "DWRFMOVE.wav",
+			"wince": "DWRFWNCE.wav"
+		},
+		"speed" : 6,
+		"abilities":
+		{
+			 "extraAttack" :
+			{
+				"type" : "ADDITIONAL_ATTACK",
+				"val" : 1
+			},
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 25
+			 }
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+			}
+		]
+	}
+}
